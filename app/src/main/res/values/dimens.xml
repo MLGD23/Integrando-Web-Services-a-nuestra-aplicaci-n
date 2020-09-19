@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="elevation_actionbar">24dp</dimen>
+    <dimen name="rv_padding">16dp</dimen>
+    <dimen name="cardview_corner_radius">10dp</dimen>
+    <dimen name="cardview_bones_size">32dp</dimen>
+    <dimen name="cardview_labels_padding">8dp</dimen>
+    <dimen name="cardview_text_size">22sp</dimen>
+    <dimen name="cardview_layout_padding">16dp</dimen>
+    <dimen name="profile_size">256dp</dimen>
+    <dimen name="logo_size">32dp</dimen>
+    <dimen name="app_name_size">22sp</dimen>
+    <dimen name="app_name_padding">8dp</dimen>
+</resources>

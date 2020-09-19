@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cv_mascota"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="@dimen/cardview_corner_radius"
+    app:cardElevation="2dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/cardview_layout_padding">
+
+        <ImageView
+            android:id="@+id/iv_mascota_foto"
+            android:layout_width="match_parent"
+            android:layout_height="344dp"
+            android:layout_gravity="center_horizontal"
+            android:scaleType="centerCrop"
+            android:contentDescription="@string/img_content_description"
+            android:src="@drawable/pet1" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/iv_white_bone"
+                android:layout_width="@dimen/cardview_bones_size"
+                android:layout_height="@dimen/cardview_bones_size"
+                android:layout_margin="@dimen/cardview_labels_padding"
+                android:contentDescription="@string/img_content_description"
+                android:src="@drawable/white_bone" />
+
+            <TextView
+                android:id="@+id/tv_nombre"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center_vertical"
+                android:text="@string/nombre_mascota"
+                android:textStyle="bold"
+                android:textSize="@dimen/cardview_text_size"/>
+
+            <TextView
+                android:id="@+id/tv_rating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="@string/rating_default"
+                android:textStyle="bold"
+                android:textSize="@dimen/cardview_text_size" />
+
+            <ImageView
+                android:id="@+id/iv_yellow_bone"
+                android:layout_width="@dimen/cardview_bones_size"
+                android:layout_height="@dimen/cardview_bones_size"
+                android:layout_gravity="center_vertical"
+                android:contentDescription="@string/img_content_description"
+                android:src="@drawable/yellow_bone" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

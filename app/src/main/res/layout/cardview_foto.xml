@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cv_foto"
+    app:cardCornerRadius="@dimen/cardview_corner_radius"
+    app:cardElevation="2dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="128dp"
+            android:layout_height="128dp"
+
+            android:id="@+id/iv_foto_pic"
+            android:layout_gravity="center_horizontal"
+            android:scaleType="centerCrop"
+            android:contentDescription="@string/img_content_description"
+            android:src="@drawable/pet2" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_rating_foto"
+                android:layout_gravity="center_vertical"
+                android:text="@string/rating_default"
+                android:textStyle="bold"
+                android:textSize="@dimen/cardview_text_size"/>
+
+            <ImageView
+                android:layout_width="@dimen/cardview_bones_size"
+                android:layout_height="@dimen/cardview_bones_size"
+                android:contentDescription="@string/img_content_description"
+                android:src="@drawable/yellow_bone"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
